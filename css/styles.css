@@ -287,7 +287,6 @@ footer {
   margin-right: auto;
   margin-left: auto;
 }
-
 .nav {
   display: flex;
   align-items: center;
@@ -1175,7 +1174,7 @@ width: 496px;
     justify-content: start;
   }
   .icon-container {
-    display: block;
+    display:flex;
   }
   .future-item {
     display: flex;
