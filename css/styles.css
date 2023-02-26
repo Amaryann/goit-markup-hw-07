@@ -256,7 +256,6 @@ footer {
 }
 .section-text {
   font-weight: 500;
-  font-size: 16;
   letter-spacing: 0.02em;
   color: var(--body-txt);
   margin-top: 8px;
@@ -401,6 +400,9 @@ footer {
   list-style-type: none;
   padding-left: 0;
 }
+.desc-list .section-subtitle{
+  font-size: 36px;
+}
 .socials-link {
   display: flex;
   width: 40px;
@@ -431,7 +433,7 @@ footer {
 }
 
 .business-partner {
-  /* width: 168px; */
+  width: 137px;
   height: 88px;
   display: flex;
   border: 1px solid var(--customer-bg-img);
@@ -561,12 +563,12 @@ footer {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  width: 392px;
+  width: 95%;
   min-height: 586px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%);
   background-color: var(--modal-bg-color);
   padding: 0;
 }
@@ -962,7 +964,7 @@ footer {
 }
 .mobile-menu-address .link-burger-tel{
   font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 1.11;
     text-transform: capitalize;
     color: var(--pressed-state-txt);
@@ -994,13 +996,23 @@ footer {
   .mobile-menu-link > .item + .item {
     margin-left: 56px;
   }
+  .mobile-menu-address .link-burger-tel{
+    font-size: 36px;
+  }
   .modal{
     transform: translate(-50%, -50%);
+    width: 392px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .business-partner{
+    width: 168px;
+  }
+  .mobile-menu-address .link-burger-tel{
+    font-size: 36px;
   }
   .modal{
     transform: translate(-50%, -50%);
@@ -1027,7 +1039,8 @@ max-width: 496px;
   }
   .desc-list .section-subtitle {
     display: flex;
-    justify-content: start;;
+    font-size: 36px;
+    justify-content: start;
   }
   .menu-toggle {
     display: flex;
@@ -1078,6 +1091,7 @@ max-width: 496px;
   .customers-list {
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 24px;
   }
   .section-list {
     flex-wrap: wrap;
@@ -1212,7 +1226,7 @@ max-width: 496px;
     display:flex;
   }
   .future-item {
-    display: flex;
+    display: block;
   }
   .nav .list {
     display: flex;
@@ -1250,4 +1264,5 @@ margin-bottom: 48px;
   .portfolio-item{
     width: calc((100% - 48px) / 3);
   }
+}
 }
