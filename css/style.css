@@ -954,7 +954,13 @@ footer {
   letter-spacing: 0.02em;
   color: var(--hero-bg-color);
 }
-
+.mobile-menu-address .tel{
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: var(--pressed-state-txt);
+}
 .mobile-menu-address > .item + .item {
   margin-top: 40px;
 }
