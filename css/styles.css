@@ -575,7 +575,7 @@ footer {
 .modal-close-btn {
   position: absolute;
   top: 24px;
-  left: 360px;
+  right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -992,12 +992,15 @@ footer {
 .social-mobile-menu:focus {
   background-color: var(--pressed-state-txt);
 }
-@media screen  and (min-width: 480px){
+@media screen  and (min-width: 428px){
   .mobile-menu-link > .item + .item {
     margin-left: 56px;
   }
   .mobile-menu-address .link-burger-tel{
     font-size: 36px;
+  }
+  .business-partner{
+    width: 190px;
   }
   .modal{
     transform: translate(-50%, -50%);
@@ -1095,6 +1098,7 @@ max-width: 496px;
   }
   .section-list {
     flex-wrap: wrap;
+    gap: 72px 24px;
   }
   .desc-list li {
     width: 356px;
@@ -1234,6 +1238,9 @@ max-width: 496px;
   .address .list{
     gap: 24px;
     flex-direction: row;
+  }
+  .desc-list .section-subtitle{
+    font-size: 20px;
   }
   .hero {
     padding: 188px 0;
